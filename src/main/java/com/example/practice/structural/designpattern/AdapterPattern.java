@@ -19,18 +19,12 @@ public class AdapterPattern {
 	}
 }
 
-/**
- * @author sauravsatrawal
- */
 interface Employee {
 	int getId();
 	String getFirstName();
 	String getLastName();
 }
 
-/**
- * @author sauravsatrawal
- */
 class EmployeeDB implements Employee {
 	private int id;
 	private String firstName;
@@ -50,9 +44,6 @@ class EmployeeDB implements Employee {
 	public String getLastName() {	return lastName;	}
 }
 
-/**
- * @author sauravsatrawal
- */
 class EmployeeLdap {		// Doesn't implements Employee
 	private int cn;
 	private String fName;

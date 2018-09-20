@@ -12,19 +12,19 @@ public class BinarySearch {
 	}
 
 	static int binarySearch(int[] a, int n) {
-		int s = 0;
-		int e = a.length - 1;
-		int m = (s + e) / 2;
+		int first = 0;
+		int last = a.length - 1;
+		int mid = (first + last) / 2;
 
-		while (s <= e) {
-			if (a[m] == n) {
-				return m;
-			} else if (a[m] < n) {
-				s = m + 1;
-			} else if (a[m] > n) {
-				e = m - 1;
+		while (first <= last) {
+			if (a[mid] == n) {
+				return mid;
+			} else if (a[mid] < n) {
+				first = mid + 1;
+			} else if (a[mid] > n) {
+				last = mid - 1;
 			}
-			m = (s + e) / 2;
+			mid = (first + last) / 2;
 		}
 
 		return -1;

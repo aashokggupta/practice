@@ -12,6 +12,8 @@ public class FlatMap {
 		// list.stream().forEach(System.out::print);
 
 		list.stream().map(s -> s.toCharArray()).collect(Collectors.toList()).stream().filter(s -> s.length > 4).forEach(System.out::print);
+		
+		list.stream().filter(s -> s.length()>4).forEach(System.out::print);
 	}
 
 }
