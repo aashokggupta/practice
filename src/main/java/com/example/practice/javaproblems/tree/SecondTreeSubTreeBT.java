@@ -16,7 +16,7 @@ import com.example.practice.javaproblems.library.TreeNode;
  * 
  * @author Ashok
  */
-public class Problem_07 {
+public class SecondTreeSubTreeBT {
 
 	/**
 	 * Method to check if one tree is sub tree of another one

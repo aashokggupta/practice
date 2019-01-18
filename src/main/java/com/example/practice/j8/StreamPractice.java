@@ -1,6 +1,7 @@
 package com.example.practice.j8;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -92,7 +93,9 @@ public class StreamPractice {
 		/**
 		 * Show sum of all ascii values of character array
 		 */
-//		System.out.println( IntStream.of('a','b','c').sum() );
+		List<Integer> nums = Arrays.asList(1,2,3,4,5);
+		
+		System.out.println( IntStream.of('a','b','c').sum() );
 		
 		/**
 		 * Show sum of all ascii values of character array.... Looping using range
@@ -171,13 +174,8 @@ public class StreamPractice {
 		
 		employeeList.stream()
 			.filter(employee -> Integer.toString(employee.id).startsWith("1"))
-			.filter(employee -> employee.addressList.stream().anyMatch(address -> address.city.equals("Gurgaon")))
-			.forEach(System.out::println);
+			.filter(employee -> employee.addressList.stream().anyMatch(address -> address.city.equals("Gurgaon")));
 			
-		
-		
-		
-		
 	}
 }
 
@@ -200,13 +198,13 @@ class Addresss {
 }
 
 
-class Book {
-	Author author;
-	
-	Book(Author author) {
-		this.author = author;
-	}
-}
+//class Book {
+//	Author author;
+//	
+//	Book(Author author) {
+//		this.author = author;
+//	}
+//}
 
 class Author {
 	String lastName;

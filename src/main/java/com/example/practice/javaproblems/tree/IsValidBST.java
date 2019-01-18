@@ -15,7 +15,7 @@ import com.example.practice.javaproblems.library.TreeNode;
  * 
  * @author Ashok
  */
-public class Problem_04 {
+public class IsValidBST {
 
 	/**
 	 * Method to check if a given tree is BST

@@ -15,7 +15,7 @@ import com.example.practice.javaproblems.library.TreeNode;
  * 
  * @author Ashok
  */
-public class Problem_05 {
+public class MirrorTree {
 
 	/**
 	 * Method to create a mirror image of a given tree

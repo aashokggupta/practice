@@ -15,7 +15,7 @@ import com.example.practice.javaproblems.library.TreeNode;
  * 
  * @author Ashok
  */
-public class Problem_08 {
+public class LowerCommonAncestorBST {
 
 	/**
 	 * Method to find LCA in a binary search tree

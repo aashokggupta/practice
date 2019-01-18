@@ -15,7 +15,7 @@ import com.example.practice.javaproblems.library.TreeNode;
  * 
  * @author Ashok
  */
-public class Problem_06 {
+public class IsTwoSameTreeBT {
 
 	/**
 	 * Method to check if two trees are same

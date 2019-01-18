@@ -15,7 +15,7 @@ import com.example.practice.javaproblems.library.TreeNode;
  * 
  * @author Ashok
  */
-public class Problem_03 {
+public class MinMaxInBST {
 
 	/**
 	 * Method to find minimum value in a BST

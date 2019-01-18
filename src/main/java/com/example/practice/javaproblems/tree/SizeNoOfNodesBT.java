@@ -1,6 +1,6 @@
 /**
  * JavaProblems
- * Problem_01.java
+ * Problem_02.java
  */
 package com.example.practice.javaproblems.tree;
 
@@ -9,27 +9,25 @@ import com.example.practice.javaproblems.library.TreeNode;
 /**
  * <br> Problem Statement :
  * 
- * Find height of binary tree
+ * Find size of binary tree i.e number of nodes
  * 
  * </br>
  * 
  * @author Ashok
  */
-public class Problem_01 {
+public class SizeNoOfNodesBT {
 
 	/**
-	 * Method to find the height of a given tree
+	 * Method to find the size of a binary tree
 	 * 
 	 * @param root
 	 * @return {@link int}
 	 */
-	public static <T> int height(TreeNode<T> root) {
+	public static <T> int size(TreeNode<T> root) {
 		if (root == null) {
 			return 0;
 		}
-		int leftHeight = height(root.getLeft());
-		int rightHeight = height(root.getRight());
-		return 1 + Math.max(leftHeight, rightHeight);
+		return 1 + size(root.getLeft()) + size(root.getRight());
 	}
 
 	public static void main(String[] args) {
@@ -46,7 +44,7 @@ public class Problem_01 {
 		node2.setLeft(node4);
 		node2.setRight(node5);
 		node5.setLeft(node6);
-		System.out.println(height(root));
+		System.out.println(size(root));
 	}
 
 }

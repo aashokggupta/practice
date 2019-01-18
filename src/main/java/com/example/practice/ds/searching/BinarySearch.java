@@ -9,6 +9,12 @@ public class BinarySearch {
 		System.out.println("Index of 350 : " + binarySearch(a, 350));
 		System.out.println("Index of 4 : " + binarySearch(a, 4));
 		System.out.println("Index of 12212 : " + binarySearch(a, 12212));
+		
+		System.out.println(a.length);
+		System.out.println("Index of 6 : " + recursiveBinarySearch(a, 6,0,(a.length-1)));
+		System.out.println("Index of 350 : " + recursiveBinarySearch(a, 350,0,(a.length-1)));
+		System.out.println("Index of 4 : " + recursiveBinarySearch(a, 4,0,(a.length-1)));
+		System.out.println("Index of 12212 : " + recursiveBinarySearch(a, 12212,0,(a.length-1)));
 	}
 
 	static int binarySearch(int[] a, int n) {
@@ -28,5 +34,23 @@ public class BinarySearch {
 		}
 
 		return -1;
+	}
+	
+	static int recursiveBinarySearch(int[] a, int data, int first, int last) {
+		if(first>last) {
+			return -1;
+		}
+		
+		int mid = (first+last)/2;
+		
+		if(a[mid] == data){
+			return mid;
+		}
+		
+		if(a[mid] > data) {
+			return recursiveBinarySearch(a,data,first,mid-1);
+		} else{
+			return recursiveBinarySearch(a,data,mid+1,last);
+		}  
 	}
 }

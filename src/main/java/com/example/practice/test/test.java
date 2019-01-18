@@ -2,8 +2,9 @@ package com.example.practice.test;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class test {
@@ -23,6 +24,8 @@ public class test {
     }
 
     public static void main(String[] args) throws IOException {
+    	
+    	Map map = new HashMap();
     	List<Integer> a = new ArrayList<Integer>();
     	a.add(5);
     	a.add(6);
