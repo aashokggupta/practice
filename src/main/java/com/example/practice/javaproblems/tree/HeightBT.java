@@ -1,28 +1,12 @@
-/**
- * JavaProblems
- * Problem_01.java
- */
+
 package com.example.practice.javaproblems.tree;
 
 import com.example.practice.javaproblems.library.TreeNode;
 
-/**
- * <br> Problem Statement :
- * 
- * Find height of binary tree
- * 
- * </br>
- * 
- * @author Ashok
- */
+
 public class HeightBT {
 
-	/**
-	 * Method to find the height of a given tree
-	 * 
-	 * @param root
-	 * @return {@link int}
-	 */
+
 	public static <T> int height(TreeNode<T> root) {
 		if (root == null) {
 			return 0;
