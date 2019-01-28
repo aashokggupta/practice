@@ -1,6 +1,9 @@
 
 package com.example.practice.javaproblems.tree;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.example.practice.javaproblems.library.TreeNode;
 
 
@@ -24,13 +27,18 @@ public class HeightBT {
 		TreeNode<Integer> node4 = new TreeNode<Integer>(12);
 		TreeNode<Integer> node5 = new TreeNode<Integer>(23);
 		TreeNode<Integer> node6 = new TreeNode<Integer>(19);
+		TreeNode<Integer> node7 = new TreeNode<Integer>(10);
+		TreeNode<Integer> node8 = new TreeNode<Integer>(11);
+		TreeNode<Integer> node9 = new TreeNode<Integer>(21);
 		root.setLeft(node1);
 		root.setRight(node2);
 		node1.setLeft(node3);
 		node2.setLeft(node4);
 		node2.setRight(node5);
 		node5.setLeft(node6);
+		node4.setLeft(node7);
+		node4.setRight(node8);
+		node8.setLeft(node9);
 		System.out.println(height(root));
 	}
-
 }

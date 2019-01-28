@@ -21,6 +21,8 @@ public class RepeatingIntSort {
 		}
 		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
 		
+		map.entrySet().stream().forEach(i -> System.out.println(i.getValue()));
+		
 		System.out.println(Stream.of(arr).collect(Collectors.averagingInt(Integer::intValue))+"");
 		
 		System.out.println(Stream.of(arr).mapToInt(i-> i).average().orElse(0.0));
